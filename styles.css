@@ -472,7 +472,7 @@ button { font-family: inherit; cursor: pointer; }
   gap: 64px;
   margin-top: var(--space-48);
 }
-.feature-icon { display: block; width: 32px; height: 32px; margin-bottom: var(--space-24); }
+.feature-icon { display: block; width: 48px; height: 48px; margin-bottom: var(--space-24); }
 .feature .eyebrow { margin-bottom: var(--space-8); color: var(--text-fill-supportive-2); font-size: 12px; }
 .feature .h4 { margin-bottom: var(--space-8); }
 .feature p { margin: 0; color: var(--text-fill-supportive-2); font-size: 18px; line-height: 140%; }
