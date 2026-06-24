@@ -549,48 +549,6 @@ button { font-family: inherit; cursor: pointer; }
 .cta-band .h2 { margin-bottom: var(--space-16); }
 .cta-band p { color: var(--text-fill-supportive-1); margin: 0 0 var(--space-32); }
 
-/* Greyscale edge orbs — co-prime durations so they never fully repeat in sync */
-.cta-orb {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  will-change: transform;
-  filter: blur(120px);
-}
-.cta-orb--1 {
-  width: 640px; height: 640px;
-  background: rgba(255, 255, 255, 0.11);
-  top: -180px; left: -180px;
-  animation: cta-drift-1 8s ease-in-out infinite;
-}
-.cta-orb--2 {
-  width: 580px; height: 580px;
-  background: rgba(210, 210, 210, 0.09);
-  bottom: -160px; right: -160px;
-  animation: cta-drift-2 11s ease-in-out infinite;
-}
-.cta-orb--3 {
-  width: 520px; height: 520px;
-  background: rgba(180, 180, 180, 0.10);
-  bottom: -140px; left: -140px;
-  animation: cta-drift-3 6s ease-in-out infinite;
-}
-
-@keyframes cta-drift-1 {
-  0%, 100% { transform: translate(0px, 0px); }
-  25%       { transform: translate(220px, 160px); }
-  50%       { transform: translate(300px, 60px); }
-  75%       { transform: translate(120px, 260px); }
-}
-@keyframes cta-drift-2 {
-  0%, 100% { transform: translate(0px, 0px); }
-  33%       { transform: translate(-260px, -160px); }
-  66%       { transform: translate(-80px, -300px); }
-}
-@keyframes cta-drift-3 {
-  0%, 100% { transform: translate(0px, 0px); }
-  50%       { transform: translate(280px, -240px); }
-}
 
 /* ----------------------------------------------------------------------- */
 /* 15. Platform cards                                                      */
