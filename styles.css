@@ -510,7 +510,7 @@ button { font-family: inherit; cursor: pointer; }
   flex-direction: column;
   gap: 32px;
 }
-.process-icon { width: 64px; height: 64px; display: block; flex-shrink: 0; }
+.process-icon { width: 48px; height: 48px; display: block; flex-shrink: 0; }
 .process-card__body { display: flex; flex-direction: column; gap: var(--space-16); }
 .process-card .h3 { font-size: 24px; margin: 0; }
 .process-card__body > p { color: var(--text-fill-supportive-2); margin: 0; font-size: 18px; line-height: 140%; }
@@ -613,7 +613,7 @@ button { font-family: inherit; cursor: pointer; }
   flex-direction: column;
   gap: var(--space-16);
 }
-.platform-icon { display: block; width: 32px; height: 32px; margin-bottom: var(--space-8); }
+.platform-icon { display: block; width: 48px; height: 48px; margin-bottom: var(--space-8); }
 .platform-card .h3 { font-size: 22px; }
 .platform-card > p { color: var(--text-fill-supportive-1); margin: 0; font-size: 15px; }
 .process-card .tick-list svg { color: var(--text-fill-supportive-2); }
