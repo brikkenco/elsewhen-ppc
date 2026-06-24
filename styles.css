@@ -321,6 +321,7 @@ button { font-family: inherit; cursor: pointer; }
   grid-template-columns: 1.05fr 0.95fr;
   gap: clamp(56px, 8vw, 128px);
   align-items: start;
+  padding-inline: 0;
 }
 .hero__copy { max-width: none; }
 .hero__copy .h-display { font-size: 48px; }
@@ -748,6 +749,7 @@ button { font-family: inherit; cursor: pointer; }
 /* 19. Responsive                                                          */
 /* ----------------------------------------------------------------------- */
 @media (max-width: 1023px) {
+  .hero .container { padding-inline: var(--gutter); }
   .feature-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-32); }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
   .platform-grid { grid-template-columns: 1fr; }
