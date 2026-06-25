@@ -429,7 +429,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ----------------------------------------------------------------------- */
 .logo-strip { padding-bottom: 100px; }
 .logo-strip .container { padding-block: var(--space-40); }
-.logo-carousel { position: relative; height: 96px; }
+.logo-carousel { position: relative; height: 115px; }
 .logo-row {
   position: absolute;
   inset: 0;
@@ -456,7 +456,7 @@ button { font-family: inherit; cursor: pointer; }
 .logo-row--active .logo:nth-child(5) { transition-delay: 533ms; }
 .logo-row--active .logo:nth-child(6) { transition-delay: 666ms; }
 /* Logo uniform sizing — SVGs are 150×100 canvas; logos occupy central ~30-50% of canvas height */
-.logo-strip .logo { height: 96px; width: auto; }
+.logo-strip .logo { height: 115px; width: auto; }
 
 /* ----------------------------------------------------------------------- */
 /* 11. Challenge band (full-bleed green)                                   */
@@ -791,8 +791,8 @@ button { font-family: inherit; cursor: pointer; }
   .story__bullets li { font-size: 15px; }
 
   /* Logo strip - mobile */
-  .logo-carousel { height: 52px; }
-  .logo-strip .logo { height: 52px; }
+  .logo-carousel { height: 62px; }
+  .logo-strip .logo { height: 62px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
