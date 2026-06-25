@@ -583,6 +583,7 @@ button { font-family: inherit; cursor: pointer; }
 .process-card .tick-list svg { color: var(--text-fill-supportive-2); }
 .process-card .tick-list li { font-size: 15px; }
 .platform-card .tick-list svg { color: var(--text-fill-supportive-2); }
+.platform-card .tick-list li { font-size: 15px; }
 
 /* ----------------------------------------------------------------------- */
 /* 16. Client stories                                                      */
