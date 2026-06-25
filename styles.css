@@ -501,7 +501,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ----------------------------------------------------------------------- */
 .process .section-head .h2 { color: var(--text-fill-primary); }
 .process.section { padding-bottom: clamp(28px, 4vw, 60px); }
-.cta-band.section { padding-top: clamp(60px, 8.4vw, 126px); padding-bottom: clamp(117px, 16.5vw, 252px); }
+.cta-band.section { padding-top: clamp(60px, 8.4vw, 126px); padding-bottom: clamp(94px, 13.2vw, 202px); }
 .process-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -553,7 +553,7 @@ button { font-family: inherit; cursor: pointer; }
   align-items: center;
 }
 .cta-band .h2 { margin-bottom: var(--space-16); }
-.cta-band p { color: var(--text-fill-supportive-1); margin: 0 0 var(--space-32); }
+.cta-band p { color: #FFFFFF; margin: 0 0 var(--space-32); }
 
 
 /* ----------------------------------------------------------------------- */
@@ -746,7 +746,7 @@ button { font-family: inherit; cursor: pointer; }
   .platform.section { padding-top: 60px; padding-bottom: 20px; }
   .platform + .section { padding-top: 20px; }
   .process.section { padding-top: 60px; padding-bottom: 20px; }
-  .cta-band.section { padding-top: clamp(144px, 22.5vw, 252px); padding-bottom: clamp(252px, 36vw, 432px); }
+  .cta-band.section { padding-top: clamp(144px, 22.5vw, 252px); padding-bottom: clamp(202px, 28.8vw, 346px); }
 
   /* Hero */
   .hero .container { grid-template-columns: 1fr; gap: var(--space-32); }
