@@ -349,6 +349,7 @@ button { font-family: inherit; cursor: pointer; }
   background: #FFFFFF;
   border-radius: var(--radius-card);
   padding: 32px;
+  position: relative;
 }
 .hero-form__header { display: flex; flex-direction: column; gap: var(--space-16); }
 .hero-form__title {
@@ -713,6 +714,8 @@ button { font-family: inherit; cursor: pointer; }
   justify-content: center;
   text-align: center;
   gap: var(--space-16);
+  background: #FFFFFF;
+  border-radius: var(--radius-card);
 }
 .hero-form__thanks[hidden],
 .footer-thanks[hidden],
