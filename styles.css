@@ -587,7 +587,7 @@ button { font-family: inherit; cursor: pointer; }
   gap: var(--space-16);
 }
 .platform-icon { display: block; width: 48px; height: 48px; margin-bottom: var(--space-8); }
-.platform-card .h3 { font-size: 26px; margin-top: 32px; }
+.platform-card .h3 { font-size: 26px; margin-top: 40px; }
 .platform-card > p { color: var(--text-fill-supportive-1); margin: 0; font-size: 18px; }
 .process-card .tick-list svg { color: var(--text-fill-supportive-2); }
 .process-card .tick-list li { font-size: 15px; }
