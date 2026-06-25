@@ -773,8 +773,12 @@ button { font-family: inherit; cursor: pointer; }
   .footer-cta .container { grid-template-columns: 1fr; }
   .footer-cta.section { padding-top: 120px; padding-bottom: 80px; }
 
-  /* Client stories - narrow card width for mobile */
+  /* Client stories - narrow card width and reduced type for mobile */
   .story { flex: 0 0 min(300px, 82vw); }
+  .story__stat { font-size: 48px; }
+  .story__statlabel { font-size: 16px; }
+  .story__title { font-size: 22px; }
+  .story__bullets li { font-size: 15px; }
 
   /* Logo strip - fade between pairs */
   .logo-strip .container {
