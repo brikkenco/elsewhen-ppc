@@ -640,7 +640,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .story__bullets li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   font-size: 19px;
   line-height: 1.4;
@@ -653,6 +653,7 @@ button { font-family: inherit; cursor: pointer; }
   height: 6px;
   border-radius: 50%;
   background: rgba(240, 240, 240, 0.7);
+  margin-top: 0.45em;
 }
 
 .story__pill {
