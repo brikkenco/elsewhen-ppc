@@ -427,7 +427,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ----------------------------------------------------------------------- */
 /* 10. Logo strip                                                          */
 /* ----------------------------------------------------------------------- */
-.logo-strip {}
+.logo-strip { padding-bottom: 100px; }
 .logo-strip .container {
   display: flex;
   align-items: center;
