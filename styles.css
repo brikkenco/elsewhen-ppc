@@ -519,7 +519,7 @@ button { font-family: inherit; cursor: pointer; }
 .process-icon { width: 48px; height: 48px; display: block; flex-shrink: 0; }
 .process-card__body { display: flex; flex-direction: column; gap: var(--space-16); }
 .process-card .h3 { font-size: 29px; margin: 0; }
-.process-card__body > p { color: var(--text-fill-supportive-2); margin: 0; font-size: 22px; line-height: 140%; }
+.process-card__body > p { color: var(--text-fill-supportive-2); margin: 0; font-size: 20px; line-height: 140%; }
 .process-card__body > .week { color: var(--text-fill-supportive-2); font-size: 14px; }
 .tick-list { list-style: none; margin: 0; padding: 8px 0 0; display: flex; flex-direction: column; gap: var(--space-8); }
 .tick-list li {
