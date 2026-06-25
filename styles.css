@@ -715,7 +715,8 @@ button { font-family: inherit; cursor: pointer; }
   gap: var(--space-16);
 }
 .hero-form__thanks[hidden],
-.footer-thanks[hidden] { display: none !important; }
+.footer-thanks[hidden],
+.footer-cta .form-grid[hidden] { display: none !important; }
 .hero-form__thanks-title {
   font-family: var(--font-body);
   font-size: 22px;
