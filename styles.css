@@ -429,7 +429,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ----------------------------------------------------------------------- */
 .logo-strip { padding-bottom: 100px; }
 .logo-strip .container { padding-block: var(--space-40); }
-.logo-carousel { position: relative; height: 56px; }
+.logo-carousel { position: relative; height: 48px; }
 .logo-row {
   position: absolute;
   inset: 0;
@@ -455,31 +455,8 @@ button { font-family: inherit; cursor: pointer; }
 .logo-row--active .logo:nth-child(4) { transition-delay: 400ms; }
 .logo-row--active .logo:nth-child(5) { transition-delay: 533ms; }
 .logo-row--active .logo:nth-child(6) { transition-delay: 666ms; }
-/* Logo heights */
-.logo--jcdecaux    { height: 20px; }
-.logo--gocompare   { height: 24px; }
-.logo--jameson     { height: 42px; }
-.logo--bupa        { height: 28px; }
-.logo--kkr         { height: 20px; }
-.logo--citi        { height: 34px; }
-.logo--inmarsat    { height: 22px; }
-.logo--nats        { height: 22px; }
-.logo--microsoft   { height: 26px; }
-.logo--sohohouse   { height: 18px; }
-.logo--techcom     { height: 28px; }
-.logo--cbre        { height: 26px; }
-.logo--secret      { height: 40px; }
-.logo--asos        { height: 22px; }
-.logo--founders    { height: 28px; }
-.logo--zego        { height: 24px; }
-.logo--pollen      { height: 34px; }
-.logo--capitalflow { height: 26px; }
-.logo--google      { height: 30px; }
-.logo--spotify     { height: 28px; }
-.logo--jpm         { height: 18px; }
-.logo--wpp         { height: 28px; }
-.logo--iata        { height: 36px; }
-.logo--mc          { height: 36px; }
+/* Logo uniform sizing — SVGs are standardised to the same canvas */
+.logo-strip .logo { height: 36px; width: auto; max-width: 160px; }
 
 /* ----------------------------------------------------------------------- */
 /* 11. Challenge band (full-bleed green)                                   */
@@ -814,8 +791,8 @@ button { font-family: inherit; cursor: pointer; }
   .story__bullets li { font-size: 15px; }
 
   /* Logo strip - mobile */
-  .logo-carousel { height: 40px; }
-  .logo-strip .logo { height: 20px; }
+  .logo-carousel { height: 32px; }
+  .logo-strip .logo { height: 24px; max-width: 100px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
