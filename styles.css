@@ -428,25 +428,58 @@ button { font-family: inherit; cursor: pointer; }
 /* 10. Logo strip                                                          */
 /* ----------------------------------------------------------------------- */
 .logo-strip { padding-bottom: 100px; }
-.logo-strip .container {
+.logo-strip .container { padding-block: var(--space-40); }
+.logo-carousel { position: relative; height: 56px; }
+.logo-row {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-32);
-  flex-wrap: wrap;
-  padding-block: var(--space-40);
 }
-.logo-group { display: contents; }
-.logo-strip .logo {
+.logo-row .logo {
   flex: 0 0 auto;
   object-fit: contain;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease 0s, transform 0.2s ease 0s;
 }
-.logo--google  { width: 104px; height: 36px; }
-.logo--spotify { width: 111px; height: 34px; }
-.logo--jpm     { width: 155px; height: 22px; }
-.logo--wpp     { width: 94px;  height: 28px; }
-.logo--iata    { width: 59px;  height: 36px; }
-.logo--mc      { width: 63px;  height: 36px; }
+.logo-row--active .logo {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.logo-row--active .logo:nth-child(1) { transition-delay: 0ms; }
+.logo-row--active .logo:nth-child(2) { transition-delay: 133ms; }
+.logo-row--active .logo:nth-child(3) { transition-delay: 266ms; }
+.logo-row--active .logo:nth-child(4) { transition-delay: 400ms; }
+.logo-row--active .logo:nth-child(5) { transition-delay: 533ms; }
+.logo-row--active .logo:nth-child(6) { transition-delay: 666ms; }
+/* Logo heights */
+.logo--jcdecaux    { height: 20px; }
+.logo--gocompare   { height: 24px; }
+.logo--jameson     { height: 42px; }
+.logo--bupa        { height: 28px; }
+.logo--kkr         { height: 20px; }
+.logo--citi        { height: 34px; }
+.logo--inmarsat    { height: 22px; }
+.logo--nats        { height: 22px; }
+.logo--microsoft   { height: 26px; }
+.logo--sohohouse   { height: 18px; }
+.logo--techcom     { height: 28px; }
+.logo--cbre        { height: 26px; }
+.logo--secret      { height: 40px; }
+.logo--asos        { height: 22px; }
+.logo--founders    { height: 28px; }
+.logo--zego        { height: 24px; }
+.logo--pollen      { height: 34px; }
+.logo--capitalflow { height: 26px; }
+.logo--google      { height: 30px; }
+.logo--spotify     { height: 28px; }
+.logo--jpm         { height: 18px; }
+.logo--wpp         { height: 28px; }
+.logo--iata        { height: 36px; }
+.logo--mc          { height: 36px; }
 
 /* ----------------------------------------------------------------------- */
 /* 11. Challenge band (full-bleed green)                                   */
@@ -759,7 +792,7 @@ button { font-family: inherit; cursor: pointer; }
   .h2 { font-size: 34px; }
 
   /* Logo strip */
-  .logo-strip .container { justify-content: center; gap: var(--space-24) var(--space-32); }
+  /* (logo-strip uses carousel layout — no override needed) */
 
   /* Feature grid */
   .feature-grid { grid-template-columns: 1fr; gap: 24px; }
@@ -780,22 +813,9 @@ button { font-family: inherit; cursor: pointer; }
   .story__title { font-size: 22px; }
   .story__bullets li { font-size: 15px; }
 
-  /* Logo strip - fade between pairs */
-  .logo-strip .container {
-    position: relative;
-    min-height: 40px;
-  }
-  .logo-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
-    inset: 0;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  .logo-group .logo { margin: 0 auto; }
-  .logo-group.logo-active { opacity: 1; }
+  /* Logo strip - mobile */
+  .logo-carousel { height: 40px; }
+  .logo-strip .logo { height: 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

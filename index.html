@@ -88,17 +88,39 @@
     <!-- ===================== Logo strip ===================== -->
     <section class="logo-strip" aria-label="Trusted by">
       <div class="container">
-        <div class="logo-group">
-          <img class="logo logo--google" src="assets/logos/google.svg" alt="Google" />
-          <img class="logo logo--spotify" src="assets/logos/spotify.svg" alt="Spotify" />
-        </div>
-        <div class="logo-group">
-          <img class="logo logo--jpm" src="assets/logos/jpmorganchase.svg" alt="JPMorganChase" />
-          <img class="logo logo--wpp" src="assets/logos/wpp.png" alt="WPP" />
-        </div>
-        <div class="logo-group">
-          <img class="logo logo--iata" src="assets/logos/iata.svg" alt="IATA" />
-          <img class="logo logo--mc" src="assets/logos/mastercard.svg" alt="Mastercard" />
+        <div class="logo-carousel">
+          <div class="logo-row">
+            <img class="logo logo--jcdecaux"    src="assets/logos/jcdecaux.svg"       alt="JCDecaux" />
+            <img class="logo logo--gocompare"   src="assets/logos/gocompare.svg"      alt="GoCompare" />
+            <img class="logo logo--jameson"     src="assets/logos/jameson.svg"        alt="Jameson" />
+            <img class="logo logo--bupa"        src="assets/logos/bupa.svg"           alt="Bupa" />
+            <img class="logo logo--kkr"         src="assets/logos/kkr.svg"            alt="KKR" />
+            <img class="logo logo--citi"        src="assets/logos/citi.svg"           alt="Citi" />
+          </div>
+          <div class="logo-row">
+            <img class="logo logo--inmarsat"    src="assets/logos/inmarsat.svg"       alt="Inmarsat" />
+            <img class="logo logo--nats"        src="assets/logos/nats.svg"           alt="NATS" />
+            <img class="logo logo--microsoft"   src="assets/logos/microsoft.svg"      alt="Microsoft" />
+            <img class="logo logo--sohohouse"   src="assets/logos/soho_house.svg"     alt="Soho House" />
+            <img class="logo logo--techcom"     src="assets/logos/techcombank.svg"    alt="Techcombank" />
+            <img class="logo logo--cbre"        src="assets/logos/cbre.svg"           alt="CBRE" />
+          </div>
+          <div class="logo-row">
+            <img class="logo logo--secret"      src="assets/logos/secret_escapes.svg" alt="Secret Escapes" />
+            <img class="logo logo--asos"        src="assets/logos/asos.svg"           alt="ASOS" />
+            <img class="logo logo--founders"    src="assets/logos/founders.svg"       alt="Founders Bank" />
+            <img class="logo logo--zego"        src="assets/logos/zego.svg"           alt="Zego" />
+            <img class="logo logo--pollen"      src="assets/logos/pollen_street.svg"  alt="Pollen Street" />
+            <img class="logo logo--capitalflow" src="assets/logos/capitalflow.svg"    alt="Capitalflow" />
+          </div>
+          <div class="logo-row">
+            <img class="logo logo--google"      src="assets/logos/google.svg"         alt="Google" />
+            <img class="logo logo--spotify"     src="assets/logos/spotify.svg"        alt="Spotify" />
+            <img class="logo logo--jpm"         src="assets/logos/jpmorganchase.svg"  alt="JPMorganChase" />
+            <img class="logo logo--wpp"         src="assets/logos/wpp.png"            alt="WPP" />
+            <img class="logo logo--iata"        src="assets/logos/iata.svg"           alt="IATA" />
+            <img class="logo logo--mc"          src="assets/logos/mastercard.svg"     alt="Mastercard" />
+          </div>
         </div>
       </div>
     </section>
@@ -446,16 +468,20 @@
     })();
 
     (function () {
-      if (window.innerWidth > 767) return;
-      var groups = Array.from(document.querySelectorAll('.logo-group'));
-      if (groups.length < 2) return;
+      var rows = Array.from(document.querySelectorAll('.logo-row'));
+      if (!rows.length) return;
       var current = 0;
-      groups[0].classList.add('logo-active');
-      setInterval(function () {
-        groups[current].classList.remove('logo-active');
-        current = (current + 1) % groups.length;
-        groups[current].classList.add('logo-active');
-      }, 2000);
+      function activate(idx) {
+        rows.forEach(function (r) { r.classList.remove('logo-row--active'); });
+        rows[idx].classList.add('logo-row--active');
+      }
+      setTimeout(function () {
+        activate(0);
+        setInterval(function () {
+          current = (current + 1) % rows.length;
+          activate(current);
+        }, 4500);
+      }, 50);
     })();
   </script>
 </body>
