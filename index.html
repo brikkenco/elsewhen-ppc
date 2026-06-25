@@ -534,8 +534,10 @@
     })();
     (function () {
       function showThanks() {
+        var heroHeader = document.querySelector('.hero-form__header');
         var heroFormEl = document.querySelector('.hero-form form');
         var heroThanks = document.querySelector('.hero-form__thanks');
+        if (heroHeader) heroHeader.setAttribute('hidden', '');
         if (heroFormEl) heroFormEl.style.visibility = 'hidden';
         if (heroThanks) heroThanks.removeAttribute('hidden');
 
