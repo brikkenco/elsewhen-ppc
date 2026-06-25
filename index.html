@@ -468,20 +468,56 @@
     })();
 
     (function () {
+      var carousel = document.querySelector('.logo-carousel');
       var rows = Array.from(document.querySelectorAll('.logo-row'));
       if (!rows.length) return;
-      var current = 0;
-      function activate(idx) {
-        rows.forEach(function (r) { r.classList.remove('logo-row--active'); });
-        rows[idx].classList.add('logo-row--active');
+
+      if (window.innerWidth < 768) {
+        // Mobile: 2 logos at a time, cycling through all 24 as pairs
+        carousel.classList.add('logo-carousel--mobile');
+        var allLogos = [];
+        rows.forEach(function (r) {
+          Array.from(r.querySelectorAll('.logo')).forEach(function (l) { allLogos.push(l); });
+        });
+        var totalPairs = Math.floor(allLogos.length / 2);
+        var pairIdx = 0;
+        var active = [];
+
+        function showPair(idx) {
+          active.forEach(function (l) { l.style.cssText = ''; });
+          rows.forEach(function (r) { r.classList.remove('logo-row--active'); });
+          var l1 = allLogos[idx * 2];
+          var l2 = allLogos[idx * 2 + 1];
+          if (!l1 || !l2) return;
+          l1.closest('.logo-row').classList.add('logo-row--active');
+          l1.style.cssText = 'flex:0 0 auto;width:auto;overflow:visible;opacity:1;transform:translateY(0);transition:opacity 0.35s ease 0ms,transform 0.35s ease 0ms';
+          l2.style.cssText = 'flex:0 0 auto;width:auto;overflow:visible;opacity:1;transform:translateY(0);transition:opacity 0.35s ease 133ms,transform 0.35s ease 133ms';
+          active = [l1, l2];
+        }
+
+        setTimeout(function () {
+          showPair(0);
+          setInterval(function () {
+            pairIdx = (pairIdx + 1) % totalPairs;
+            showPair(pairIdx);
+          }, 3500);
+        }, 50);
+
+      } else {
+        // Desktop: full row of 6, cycling through 4 rows
+        var current = 0;
+        function activate(idx) {
+          rows.forEach(function (r) { r.classList.remove('logo-row--active'); });
+          rows[idx].classList.add('logo-row--active');
+        }
+        setTimeout(function () {
+          activate(0);
+          setInterval(function () {
+            current = (current + 1) % rows.length;
+            activate(current);
+          }, 4500);
+        }, 50);
       }
-      setTimeout(function () {
-        activate(0);
-        setInterval(function () {
-          current = (current + 1) % rows.length;
-          activate(current);
-        }, 4500);
-      }, 50);
     })();
   </script>
 </body>

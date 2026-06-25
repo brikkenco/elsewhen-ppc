@@ -790,9 +790,23 @@ button { font-family: inherit; cursor: pointer; }
   .story__title { font-size: 22px; }
   .story__bullets li { font-size: 15px; }
 
-  /* Logo strip - mobile */
-  .logo-carousel { height: 62px; }
-  .logo-strip .logo { height: 62px; }
+  /* Logo strip - mobile pair carousel */
+  .logo-carousel { height: 115px; }
+  .logo-strip .logo { height: 100px; }
+  .logo-carousel--mobile .logo-row { justify-content: center; gap: 48px; }
+  .logo-carousel--mobile .logo-row .logo {
+    flex: 0 0 0;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: none;
+  }
+  .logo-carousel--mobile .logo-row--active .logo {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
