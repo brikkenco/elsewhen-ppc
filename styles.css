@@ -453,8 +453,8 @@ button { font-family: inherit; cursor: pointer; }
 /* ----------------------------------------------------------------------- */
 .challenge.section {
   background: #E4EAD8;
-  padding-top: clamp(48px, 7vw, 96px);
-  padding-bottom: clamp(48px, 7vw, 96px);
+  padding-top: clamp(96px, 14vw, 192px);
+  padding-bottom: clamp(96px, 14vw, 192px);
 }
 .challenge__inner {
   display: grid;
