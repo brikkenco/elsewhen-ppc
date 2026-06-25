@@ -607,7 +607,7 @@ button { font-family: inherit; cursor: pointer; }
   position: relative;
   border-radius: var(--radius-card);
   overflow: hidden;
-  min-height: 620px;
+  min-height: 744px;
   display: flex;
   flex-direction: column;
   padding: var(--space-32);
@@ -635,7 +635,7 @@ button { font-family: inherit; cursor: pointer; }
 .story__top { display: flex; flex-direction: column; gap: var(--space-16); min-height: 250px; }
 .story__cat { color: rgba(240,240,240,.9); }
 .story__stat-group { display: flex; flex-direction: column; }
-.story__stat { font-size: clamp(67px, 7.2vw, 96px); line-height: 100%; font-weight: 400; letter-spacing: -0.01em; color: #FFFFFF; }
+.story__stat { font-size: 80px; line-height: 100%; font-weight: 400; letter-spacing: -0.01em; color: #FFFFFF; }
 .story__statlabel { font-size: 22px; line-height: 140%; color: rgba(240,240,240,.92); margin-top: var(--space-4); }
 .story__title-group { display: flex; flex-direction: column; gap: var(--space-24); min-height: 185px; margin-top: auto; }
 .story__title { font-size: 32px; line-height: 120%; letter-spacing: -0.01em; margin: 0; font-family: var(--font-body); font-weight: 400; }
@@ -651,7 +651,7 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.4;
   color: rgba(240, 240, 240, 0.92);
 }
