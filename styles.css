@@ -629,7 +629,7 @@ button { font-family: inherit; cursor: pointer; }
 .story__stat { font-size: clamp(67px, 7.2vw, 96px); line-height: 100%; font-weight: 400; letter-spacing: -0.01em; color: #FFFFFF; }
 .story__statlabel { font-size: 22px; line-height: 140%; color: rgba(240,240,240,.92); margin-top: var(--space-4); }
 .story__title-group { display: flex; flex-direction: column; gap: var(--space-24); min-height: 160px; }
-.story__title { font-size: clamp(26px, 2.64vw, 34px); line-height: 120%; letter-spacing: -0.01em; margin: 0; font-family: var(--font-body); font-weight: 400; }
+.story__title { font-size: 32px; line-height: 120%; letter-spacing: -0.01em; margin: 0; font-family: var(--font-body); font-weight: 400; }
 .story__bullets {
   list-style: none;
   margin: 0;
