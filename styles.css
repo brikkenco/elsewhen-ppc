@@ -553,7 +553,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ----------------------------------------------------------------------- */
 /* 15. Platform cards                                                      */
 /* ----------------------------------------------------------------------- */
-.platform .section-head { max-width: 720px; }
+.platform .section-head { max-width: 960px; }
 .platform.section { padding-bottom: clamp(28px, 4vw, 60px); }
 .platform + .section { padding-top: clamp(28px, 4vw, 60px); }
 .platform-grid {
