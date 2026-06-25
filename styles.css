@@ -463,14 +463,14 @@ button { font-family: inherit; cursor: pointer; }
 /* ----------------------------------------------------------------------- */
 .challenge.section {
   background: #E4EAD8;
-  padding-top: clamp(48px, 7vw, 96px);
-  padding-bottom: clamp(48px, 7vw, 96px);
+  padding-top: clamp(96px, 14vw, 192px);
+  padding-bottom: clamp(96px, 14vw, 192px);
 }
 .challenge__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(40px, 6vw, 96px);
-  align-items: center;
+  align-items: end;
 }
 .challenge .eyebrow { color: var(--text-fill-supportive-2); margin-bottom: var(--space-20); }
 .challenge .h2 { color: var(--text-fill-primary); margin: 0; max-width: 20ch; }
