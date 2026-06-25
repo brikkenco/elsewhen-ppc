@@ -467,7 +467,7 @@ button { font-family: inherit; cursor: pointer; }
 .challenge .h2 { color: var(--text-fill-primary); margin-bottom: var(--space-20); max-width: 30ch; }
 .challenge p { color: var(--text-fill-supportive-1); margin: 0; max-width: 52ch; }
 .challenge strong { color: var(--text-fill-secondary); font-weight: 700; }
-.challenge + .section { padding-top: clamp(28px, 4vw, 60px); }
+.challenge + .section { padding-top: clamp(42px, 6vw, 90px); }
 
 /* ----------------------------------------------------------------------- */
 /* 12. Feature grid (Trust & Reliability)                                  */
