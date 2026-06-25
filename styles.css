@@ -489,7 +489,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .feature-icon { display: block; width: 48px; height: 48px; margin-bottom: var(--space-24); }
 .feature .eyebrow { margin-bottom: var(--space-8); color: var(--text-fill-supportive-2); font-size: 14px; }
-.feature .h4 { margin-bottom: var(--space-8); margin-top: 24px; }
+.feature .h4 { margin-bottom: var(--space-8); margin-top: 18px; }
 .feature p { margin: 0; color: var(--text-fill-supportive-2); font-size: 18px; line-height: 140%; }
 
 .badge-row { display: flex; flex-wrap: wrap; gap: var(--space-12); margin-top: var(--space-48); }
