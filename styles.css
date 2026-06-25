@@ -499,7 +499,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ----------------------------------------------------------------------- */
 /* 13. Process (How we work — dark)                                        */
 /* ----------------------------------------------------------------------- */
-.process .section-head .h2 { color: var(--text-fill-primary); }
+.process .section-head .h2 { color: var(--text-fill-primary); white-space: nowrap; }
 .process.section { padding-bottom: clamp(28px, 4vw, 60px); }
 .cta-band.section { padding-top: clamp(60px, 8.4vw, 126px); padding-bottom: clamp(94px, 13.2vw, 202px); }
 .process-grid {
