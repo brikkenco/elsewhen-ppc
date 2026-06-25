@@ -56,35 +56,37 @@
             <h2 class="hero-form__title">Book a Discovery Call</h2>
             <p class="hero-form__sub">A working conversation with an engineer, not a sales pitch. We reply within one business day.</p>
           </div>
-          <form action="#" method="post" novalidate>
-            <div class="field">
-              <label class="sr-only" for="h-name">Full name</label>
-              <input id="h-name" name="name" type="text" placeholder="Full name" autocomplete="name" />
+          <div class="hero-form__slot">
+            <form action="#" method="post" novalidate>
+              <div class="field">
+                <label class="sr-only" for="h-name">Full name</label>
+                <input id="h-name" name="name" type="text" placeholder="Full name" autocomplete="name" />
+              </div>
+              <div class="field">
+                <label class="sr-only" for="h-email">Work email</label>
+                <input id="h-email" name="email" type="email" placeholder="Work email" autocomplete="email" />
+              </div>
+              <div class="field">
+                <label class="sr-only" for="h-company">Company</label>
+                <input id="h-company" name="company" type="text" placeholder="Company" autocomplete="organization" />
+              </div>
+              <div class="field">
+                <label class="sr-only" for="h-title">Job title</label>
+                <input id="h-title" name="title" type="text" placeholder="Job title" autocomplete="organization-title" />
+              </div>
+              <div class="field">
+                <textarea id="h-msg" name="message" rows="4" placeholder="What would you put agents to work on? (optional)"></textarea>
+              </div>
+              <div class="hero-form__actions">
+                <button class="btn btn--primary btn--full" type="submit">Speak with an expert</button>
+                <p class="form-note">Trusted with production AI by Google, WPP and Spotify.</p>
+              </div>
+            </form>
+            <div class="hero-form__thanks" hidden>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#E6F5EC"/><path d="M12 20.5l5.5 5.5L28 14" stroke="#2D7A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3 class="hero-form__thanks-title">Thank you — we'll be in touch.</h3>
+              <p class="hero-form__thanks-body">Expect a reply within one business day from one of our engineers.</p>
             </div>
-            <div class="field">
-              <label class="sr-only" for="h-email">Work email</label>
-              <input id="h-email" name="email" type="email" placeholder="Work email" autocomplete="email" />
-            </div>
-            <div class="field">
-              <label class="sr-only" for="h-company">Company</label>
-              <input id="h-company" name="company" type="text" placeholder="Company" autocomplete="organization" />
-            </div>
-            <div class="field">
-              <label class="sr-only" for="h-title">Job title</label>
-              <input id="h-title" name="title" type="text" placeholder="Job title" autocomplete="organization-title" />
-            </div>
-            <div class="field">
-              <textarea id="h-msg" name="message" rows="4" placeholder="What would you put agents to work on? (optional)"></textarea>
-            </div>
-            <div class="hero-form__actions">
-              <button class="btn btn--primary btn--full" type="submit">Speak with an expert</button>
-              <p class="form-note">Trusted with production AI by Google, WPP and Spotify.</p>
-            </div>
-          </form>
-          <div class="hero-form__thanks" hidden>
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#E6F5EC"/><path d="M12 20.5l5.5 5.5L28 14" stroke="#2D7A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3 class="hero-form__thanks-title">Thank you — we'll be in touch.</h3>
-            <p class="hero-form__thanks-body">Expect a reply within one business day from one of our engineers.</p>
           </div>
         </div>
       </div>
@@ -427,32 +429,34 @@
             sales pitch.
           </p>
         </div>
-        <form class="form-grid" action="#" method="post" novalidate>
-          <div class="field">
-            <label class="sr-only" for="f-name">Full name</label>
-            <input id="f-name" name="name" type="text" placeholder="Full name" autocomplete="name" />
+        <div class="footer-form-slot">
+          <form class="form-grid" action="#" method="post" novalidate>
+            <div class="field">
+              <label class="sr-only" for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" placeholder="Full name" autocomplete="name" />
+            </div>
+            <div class="field">
+              <label class="sr-only" for="f-email">Work email</label>
+              <input id="f-email" name="email" type="email" placeholder="Work email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label class="sr-only" for="f-company">Company name</label>
+              <input id="f-company" name="company" type="text" placeholder="Company name" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label class="sr-only" for="f-title">Job title</label>
+              <input id="f-title" name="title" type="text" placeholder="Job title" autocomplete="organization-title" />
+            </div>
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit">Book my call</button>
+              <p class="form-note">We reply within one business day.</p>
+            </div>
+          </form>
+          <div class="footer-thanks" hidden>
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="rgba(255,255,255,0.08)"/><path d="M12 20.5l5.5 5.5L28 14" stroke="#8EE1A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="footer-thanks__title">Thank you — we'll be in touch.</h3>
+            <p class="footer-thanks__body">Expect a reply within one business day from one of our engineers.</p>
           </div>
-          <div class="field">
-            <label class="sr-only" for="f-email">Work email</label>
-            <input id="f-email" name="email" type="email" placeholder="Work email" autocomplete="email" />
-          </div>
-          <div class="field">
-            <label class="sr-only" for="f-company">Company name</label>
-            <input id="f-company" name="company" type="text" placeholder="Company name" autocomplete="organization" />
-          </div>
-          <div class="field">
-            <label class="sr-only" for="f-title">Job title</label>
-            <input id="f-title" name="title" type="text" placeholder="Job title" autocomplete="organization-title" />
-          </div>
-          <div class="form-actions">
-            <button class="btn btn--primary" type="submit">Book my call</button>
-            <p class="form-note">We reply within one business day.</p>
-          </div>
-        </form>
-        <div class="footer-thanks" hidden>
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="rgba(255,255,255,0.08)"/><path d="M12 20.5l5.5 5.5L28 14" stroke="#8EE1A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3 class="footer-thanks__title">Thank you — we'll be in touch.</h3>
-          <p class="footer-thanks__body">Expect a reply within one business day from one of our engineers.</p>
         </div>
       </div>
     </section>
@@ -529,18 +533,22 @@
       }
     })();
     (function () {
+      function showThanks() {
+        var heroFormEl = document.querySelector('.hero-form form');
+        var heroThanks = document.querySelector('.hero-form__thanks');
+        if (heroFormEl) heroFormEl.style.visibility = 'hidden';
+        if (heroThanks) heroThanks.removeAttribute('hidden');
+
+        var footerFormEl = document.querySelector('.footer-form-slot form');
+        var footerThanks = document.querySelector('.footer-thanks');
+        if (footerFormEl) footerFormEl.setAttribute('hidden', '');
+        if (footerThanks) footerThanks.removeAttribute('hidden');
+      }
+
       document.querySelectorAll('form').forEach(function (form) {
         form.addEventListener('submit', function (e) {
           e.preventDefault();
-          var heroForm = form.closest('.hero-form');
-          var footerCta = form.closest('.footer-cta');
-          if (heroForm) {
-            form.hidden = true;
-            heroForm.querySelector('.hero-form__thanks').hidden = false;
-          } else if (footerCta) {
-            form.hidden = true;
-            footerCta.querySelector('.footer-thanks').hidden = false;
-          }
+          showThanks();
         });
       });
     })();
